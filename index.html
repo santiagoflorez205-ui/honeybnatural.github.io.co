@@ -40,7 +40,7 @@
       <div class="collapse navbar-collapse flex-grow-0" id="navbarMenu">
         <div class="d-flex flex-column flex-lg-row align-items-center">
           <a class="navbar-brand-text d-none d-lg-flex me-4 align-items-center" href="#hero">
-            <img src="images/logo-color.png" alt="Honey'B" class="nav-logo me-2">
+            <img src="images/logo-color.png" alt="Honey'B" class="nav-logo me-2" style="max-height:48px; width:auto;">
             <span>Honey'B</span>
           </a>
           <ul class="navbar-nav gap-lg-1 align-items-center">
@@ -69,14 +69,7 @@
      HERO
 ═══════════════════════════════════════════ -->
   <section id="hero">
-    <!-- SVG Clip Path Definition for Hexagon (Horizontal) -->
-    <svg width="0" height="0" class="position-absolute">
-      <defs>
-        <clipPath id="hexagonClip" clipPathUnits="objectBoundingBox">
-          <polygon points="0.25 0, 0.75 0, 1 0.5, 0.75 1, 0.25 1, 0 0.5" />
-        </clipPath>
-      </defs>
-    </svg>
+    <!-- Clip-path defined via CSS polygon for cross-platform compatibility -->
 
     <!-- Dual Hexagonal fading gallery base -->
     <div class="hero-gallery-group">
