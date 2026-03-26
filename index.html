@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Honey'B — Shampoo sólido premium con miel. Cabello limpio, brillante y suave con una fórmula más limpia. Desde Colombia.">
+  <meta name="description"
+    content="Honey'B — Shampoo sólido premium con miel. Cabello limpio, brillante y suave con una fórmula más limpia. Desde Colombia.">
   <meta name="author" content="Honey'B S.A.S.">
   <title>Honey'B — Shampoo Sólido Premium</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+    rel="stylesheet">
   <!-- Bootstrap 5 CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
@@ -20,245 +24,281 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      NAVBAR
 ═══════════════════════════════════════════ -->
-<nav id="navbar" class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand-text" href="#hero">HONEY<span>'</span>B</a>
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container d-flex justify-content-center position-relative">
+      <button class="navbar-toggler position-absolute start-0 ms-3" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarMenu">
-      <ul class="navbar-nav mx-auto gap-lg-1">
-        <li class="nav-item"><a class="nav-link-hb nav-link" href="#porque">Por qué HoneyB</a></li>
-        <li class="nav-item"><a class="nav-link-hb nav-link" href="#historia">Historia</a></li>
-        <li class="nav-item"><a class="nav-link-hb nav-link" href="#productos">Productos</a></li>
-        <li class="nav-item"><a class="nav-link-hb nav-link" href="#aromas">Aromas</a></li>
-        <li class="nav-item"><a class="nav-link-hb nav-link" href="#proveedores">Proveedores</a></li>
-        <li class="nav-item"><a class="nav-link-hb nav-link" href="#hoteleria">Hotelería</a></li>
-        <li class="nav-item"><a class="nav-link-hb nav-link" href="#faq">FAQ</a></li>
-      </ul>
-      <a href="#contacto" class="btn-hb-dark ms-lg-3">Contacto</a>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarMenu">
+        <div class="d-flex flex-column flex-lg-row align-items-center">
+          <a class="navbar-brand-text d-none d-lg-flex me-4 align-items-center" href="#hero">
+            <img src="images/logo-color.png" alt="Honey'B" class="nav-logo me-2">
+            <span>Honey'B</span>
+          </a>
+          <ul class="navbar-nav gap-lg-1 align-items-center">
+            <li class="nav-item d-lg-none mb-3 mt-2 d-flex align-items-center">
+              <a class="navbar-brand-text d-flex align-items-center text-decoration-none" href="#hero">
+                <img src="images/logo-color.png" alt="Honey'B" class="nav-logo me-2" style="height:48px; width:auto;">
+                <span>Honey'B</span>
+              </a>
+            </li>
+            <li class="nav-item"><a class="nav-link-hb nav-link" href="#porque">Por qué HoneyB</a></li>
+            <li class="nav-item"><a class="nav-link-hb nav-link" href="#historia">Historia</a></li>
+            <li class="nav-item"><a class="nav-link-hb nav-link" href="#productos">Productos</a></li>
+            <li class="nav-item"><a class="nav-link-hb nav-link" href="#aromas">Aromas</a></li>
+            <li class="nav-item"><a class="nav-link-hb nav-link" href="#proveedores">Proveedores</a></li>
+            <li class="nav-item"><a class="nav-link-hb nav-link" href="#hoteleria">Hotelería</a></li>
+            <li class="nav-item"><a class="nav-link-hb nav-link" href="#faq">FAQ</a></li>
+          </ul>
+          <a href="#contacto" class="btn-hb-dark ms-lg-3 mt-3 mt-lg-0">Contacto</a>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      HERO
 ═══════════════════════════════════════════ -->
-<section id="hero">
-  <!-- Imagen de fondo hero — recomendada 1920×1080px -->
-  <div class="hero-img-bg">
-    <img src="images/hero-bg.jpg" alt="Honey'B Shampoo Sólido Premium" class="hero-bg-img">
-  </div>
+  <section id="hero">
+    <!-- SVG Clip Path Definition for Hexagon (Horizontal) -->
+    <svg width="0" height="0" class="position-absolute">
+      <defs>
+        <clipPath id="hexagonClip" clipPathUnits="objectBoundingBox">
+          <polygon points="0.25 0, 0.75 0, 1 0.5, 0.75 1, 0.25 1, 0 0.5" />
+        </clipPath>
+      </defs>
+    </svg>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-7 col-xl-6">
-        <div class="hero-eyebrow reveal">Desde 2022 — Innovación en cuidado capilar premium</div>
-
-        <h1 class="hero-title reveal" style="transition-delay:.1s">
-          Shampoo sólido<br><em>premium</em> con miel.
-        </h1>
-
-        <p class="hero-sub reveal" style="transition-delay:.2s">
-          Cabello limpio, brillante y suave — con una fórmula más limpia
-          (sin químicos contaminantes).
-        </p>
-
-        <div class="d-flex gap-3 flex-wrap reveal" style="transition-delay:.3s">
-          <a href="#productos" class="btn-hb-dark">Comprar ahora</a>
-          <a href="https://wa.me/573180775959" target="_blank" rel="noopener noreferrer" class="btn-hb-outline">
-            <i class="bi bi-whatsapp me-1"></i> WhatsApp
-          </a>
-          <a href="#hoteleria" class="btn-hb-outline">Cotizar hotelería</a>
-        </div>
-
-        <div class="d-flex gap-4 flex-wrap mt-4 reveal" style="transition-delay:.4s">
-          <span class="hero-badge">👨‍👩‍👧 Para toda la familia</span>
-          <span class="hero-badge">💧 Amable con el agua</span>
-          <span class="hero-badge">⚗️ Proceso controlado</span>
-        </div>
-
-        <!-- Microcopy rendimiento -->
+    <!-- Dual Hexagonal fading gallery base -->
+    <div class="hero-gallery-group">
+      <div class="hero-gallery-hex hex-1">
+        <a href="#"><img src="images/producto-70g.jpg" alt="Galeria 1A" class="hex-img img-1"></a>
+        <a href="#"><img src="images/aroma-lino-blanco.jpg" alt="Galeria 1B" class="hex-img img-2"></a>
+        <a href="#"><img src="images/producto-70g.jpg" alt="Galeria 1C" class="hex-img img-3"></a>
+        <a href="#"><img src="images/aroma-lino-blanco.jpg" alt="Galeria 1D" class="hex-img img-4"></a>
+        <a href="#"><img src="images/producto-70g.jpg" alt="Galeria 1E" class="hex-img img-5"></a>
+      </div>
+      <div class="hero-gallery-hex hex-2">
+        <a href="#"><img src="images/aroma-flor-cafe.jpg" alt="Galeria 2A" class="hex-img img-1"></a>
+        <a href="#"><img src="images/aroma-bosque-andino.jpg" alt="Galeria 2B" class="hex-img img-2"></a>
+        <a href="#"><img src="images/aroma-flor-cafe.jpg" alt="Galeria 2C" class="hex-img img-3"></a>
+        <a href="#"><img src="images/aroma-bosque-andino.jpg" alt="Galeria 2D" class="hex-img img-4"></a>
+        <a href="#"><img src="images/aroma-flor-cafe.jpg" alt="Galeria 2E" class="hex-img img-5"></a>
       </div>
     </div>
-  </div>
-</section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-xl-6">
+          <div class="hero-eyebrow reveal">Desde 2022 — Innovación en cuidado capilar premium</div>
+
+          <h1 class="hero-title reveal" style="transition-delay:.1s">
+            Shampoo sólido<br><em>premium</em> con miel.
+          </h1>
+
+          <p class="hero-sub reveal" style="transition-delay:.2s">
+            Cabello limpio, brillante y suave — con una fórmula más limpia
+            (sin químicos contaminantes).
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap reveal" style="transition-delay:.3s">
+            <a href="#productos" class="btn-hb-dark">Comprar ahora</a>
+            <a href="https://wa.me/573180775959" target="_blank" rel="noopener noreferrer" class="btn-hb-outline">
+              <i class="bi bi-whatsapp me-1"></i> WhatsApp
+            </a>
+            <a href="#hoteleria" class="btn-hb-outline">Cotizar hotelería</a>
+          </div>
+
+          <div class="d-flex gap-4 flex-wrap mt-4 reveal" style="transition-delay:.4s">
+            <span class="hero-badge">👨‍👩‍👧 Para toda la familia</span>
+            <span class="hero-badge">💧 Amable con el agua</span>
+            <span class="hero-badge">⚗️ Proceso controlado</span>
+          </div>
+
+          <!-- Microcopy rendimiento -->
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      POR QUÉ HONEY'B
 ═══════════════════════════════════════════ -->
-<section id="porque" class="bg-dark-hb" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="section-label light reveal">Por qué HoneyB</div>
-    <h2 class="section-heading on-dark mb-5 reveal" style="transition-delay:.1s">
-      Lujo consciente para tu <em>rutina</em>
-    </h2>
+  <section id="porque" class="bg-honey-pastel" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="section-label light reveal">Por qué HoneyB</div>
+      <h2 class="section-heading on-dark mb-5 reveal" style="transition-delay:.1s">
+        Lujo consciente para tu <em>rutina</em>
+      </h2>
 
-    <div class="row g-4 row-products">
-      <div class="col-md-4 reveal" style="transition-delay:.1s">
-        <div class="value-card h-100">
-          <div class="value-name">Experiencia premium que se nota</div>
-          <div class="value-desc">Espuma cremosa, limpieza efectiva y una fragancia elegante, limpia y sofisticada.</div>
+      <div class="row g-4 row-products">
+        <div class="col-md-4 reveal" style="transition-delay:.1s">
+          <div class="value-card h-100">
+            <div class="value-name">Experiencia premium que se nota</div>
+            <div class="value-desc">Espuma cremosa, limpieza efectiva y una fragancia elegante, limpia y sofisticada.
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4 reveal" style="transition-delay:.2s">
-        <div class="value-card h-100">
-          <div class="value-name">Fórmula más limpia</div>
-          <div class="value-desc">Libre de químicos contaminantes: cuidado para ti y más respeto por el agua.</div>
+        <div class="col-md-4 reveal" style="transition-delay:.2s">
+          <div class="value-card h-100">
+            <div class="value-name">Fórmula más limpia</div>
+            <div class="value-desc">Libre de químicos contaminantes: cuidado para ti y más respeto por el agua.</div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4 reveal" style="transition-delay:.3s">
-        <div class="value-card h-100">
-          <div class="value-name">Rinde muchísimo</div>
-          <div class="value-desc">Una barra dura decenas de lavadas: menos compras, menos envases, más valor.</div>
+        <div class="col-md-4 reveal" style="transition-delay:.3s">
+          <div class="value-card h-100">
+            <div class="value-name">Rinde muchísimo</div>
+            <div class="value-desc">Una barra dura decenas de lavadas: menos compras, menos envases, más valor.</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      RESULTADOS
 ═══════════════════════════════════════════ -->
-<section id="resultados" class="bg-honey-grad" style="padding: 7rem 0;">
-  <div class="container text-center">
-    <div class="section-label reveal justify-content-center">Resultados</div>
-    <h2 class="section-heading reveal" style="transition-delay:.1s">
-      Resultados que se notan desde la <em>primera lavada</em>
-    </h2>
-    <p class="body-light mt-2 mb-5 mx-auto reveal" style="transition-delay:.2s; max-width:560px;">
-      Cabello limpio, brillante y suave  </p>
-    </p>
-     <p class="body-light mt-2 mb-5 mx-auto reveal" style="transition-delay:.2s; max-width:560px;">
-      Con una fórmula más limpia <em>(sin químicos contaminantes)</em>.
-    </p>
+  <section id="resultados" class="bg-honey-grad" style="padding: 7rem 0;">
+    <div class="container text-center">
+      <div class="section-label reveal justify-content-center">Resultados</div>
+      <h2 class="section-heading reveal" style="transition-delay:.1s">
+        Resultados que se notan desde la <em>primera lavada</em>
+      </h2>
+      <p class="body-light mt-2 mb-5 mx-auto reveal" style="transition-delay:.2s; max-width:560px;">
+        Cabello limpio, brillante y suave </p>
+      </p>
+      <p class="body-light mt-2 mb-5 mx-auto reveal" style="transition-delay:.2s; max-width:560px;">
+        Con una fórmula más limpia <em>(sin químicos contaminantes)</em>.
+      </p>
 
-    <div class="row g-3 justify-content-center reveal" style="transition-delay:.3s">
-      <div class="col-auto"><span class="result-pill">Limpia sin resecar</span></div>
-      <div class="col-auto"><span class="result-pill">Brillo y suavidad</span></div>
-      <div class="col-auto"><span class="result-pill">Cabello más fuerte</span></div>
-      <div class="col-auto"><span class="result-pill">Cuero cabelludo cómodo</span></div>
-      <div class="col-auto"><span class="result-pill">Para toda la familia</span></div>
+      <div class="row g-3 justify-content-center reveal" style="transition-delay:.3s">
+        <div class="col-auto"><span class="result-pill">Limpia sin resecar</span></div>
+        <div class="col-auto"><span class="result-pill">Brillo y suavidad</span></div>
+        <div class="col-auto"><span class="result-pill">Cabello más fuerte</span></div>
+        <div class="col-auto"><span class="result-pill">Cuero cabelludo cómodo</span></div>
+        <div class="col-auto"><span class="result-pill">Para toda la familia</span></div>
+      </div>
+
+      <!-- Franja de confianza -->
+      <div class="trust-strip reveal mt-5" style="transition-delay:.4s">
+        <span class="trust-item"> Fórmula más limpia</span>
+        <span class="trust-sep">·</span>
+        <span class="trust-item">Amable con el agua</span>
+        <span class="trust-sep">·</span>
+        <span class="trust-item">Proceso controlado</span>
+      </div>
     </div>
-
-    <!-- Franja de confianza -->
-    <div class="trust-strip reveal mt-5" style="transition-delay:.4s">
-      <span class="trust-item"> Fórmula más limpia</span>
-      <span class="trust-sep">·</span>
-      <span class="trust-item">Amable con el agua</span>
-      <span class="trust-sep">·</span>
-      <span class="trust-item">Proceso controlado</span>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      HISTORIA
 ═══════════════════════════════════════════ -->
-<section id="historia" class="bg-cream" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="section-label reveal">Historia</div>
-    <h2 class="section-heading mb-0 reveal" style="transition-delay:.1s">
-      HONEY´B, una marca que ha <em>evolucionado</em> con propósito
-    </h2>
-    <p class="body-light mt-1 mb-5 reveal" style="transition-delay:.15s; max-width:400px; font-size:.8rem; letter-spacing:.05em; text-transform:uppercase;">Desde 2022.</p>
+  <section id="historia" class="bg-cream" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="section-label reveal">Historia</div>
+      <h2 class="section-heading mb-0 reveal" style="transition-delay:.1s">
+        HONEY´B, una marca que ha <em>evolucionado</em> con propósito
+      </h2>
+      <p class="body-light mt-1 mb-5 reveal"
+        style="transition-delay:.15s; max-width:400px; font-size:.8rem; letter-spacing:.05em; text-transform:uppercase;">
+        Desde 2022.</p>
 
-    <div class="row align-items-center g-5 mt-0">
-      <!-- Texto -->
-      <div class="col-lg-7 order-lg-1 reveal from-left" style="transition-delay:.15s">
-        <p class="body-light mb-3">
-          HONEY´B nació en 2022 como un emprendimiento con una idea clara: crear un shampoo sólido
-          premium que cuidara el cabello y redujera residuos. Desde entonces hemos evolucionado:
-          mejoramos la fórmula, optimizamos procesos y elevamos la experiencia, manteniendo nuestro
-          compromiso con el agua y con una cadena productiva responsable.
-        </p>
+      <div class="row align-items-center g-5 mt-0">
+        <!-- Texto -->
+        <div class="col-lg-7 order-lg-1 reveal from-left" style="transition-delay:.15s">
+          <p class="body-light mb-3">
+            HONEY´B nació en 2022 como un emprendimiento con una idea clara: crear un shampoo sólido
+            premium que cuidara el cabello y redujera residuos. Desde entonces hemos evolucionado:
+            mejoramos la fórmula, optimizamos procesos y elevamos la experiencia, manteniendo nuestro
+            compromiso con el agua y con una cadena productiva responsable.
+          </p>
 
-        <div class="founder-info-box reveal" style="transition-delay:.25s">
-          <div class="founder-info-name">Santiago Cavanzo</div>
-          <div class="founder-info-role">Fundador &amp; CEO · Honey'B S.A.S.</div>
-          <p class="founder-info-bio">
-            Emprendedor y consultor estratégico (2001). <em>Cum Laude</em> en Administración de Empresas
-            y con MBA en curso. Ha liderado proyectos de sostenibilidad e innovación social y fue
-            delegado en el 14.º Foro de Juventudes de la UNESCO. Hoy dirige HoneyB con una meta clara: llevar un producto colombiano premium a mercados internacionales.</p>
-        
+          <div class="founder-info-box reveal" style="transition-delay:.25s">
+            <div class="founder-info-name">Santiago Cavanzo</div>
+            <div class="founder-info-role">Fundador &amp; CEO · Honey'B S.A.S.</div>
+            <p class="founder-info-bio">
+              Emprendedor y consultor estratégico (2001). <em>Cum Laude</em> en Administración de Empresas
+              y con MBA en curso. Ha liderado proyectos de sostenibilidad e innovación social y fue
+              delegado en el 14.º Foro de Juventudes de la UNESCO. Hoy dirige HoneyB con una meta clara: llevar un
+              producto colombiano premium a mercados internacionales.</p>
+
+          </div>
+
+          <p class="body-light mt-4 fst-italic" style="color:var(--amber);">
+            Trayectoria real. Calidad en evolución. Impacto con intención.
+          </p>
         </div>
 
-        <p class="body-light mt-4 fst-italic" style="color:var(--amber);">
-          Trayectoria real. Calidad en evolución. Impacto con intención.
-        </p>
-      </div>
-
-      <!-- Foto fundador — recomendada 600×800px (retrato) -->
-      <div class="col-lg-5 order-lg-2 reveal from-right scale-in" style="transition-delay:.2s">
-        <div class="founder-visual">
-          <img src="images/fundador.jpg"
-               alt="Santiago Cavanzo — Fundador Honey'B"
-               class="founder-img">
-          <div class="founder-badge">
-            <div class="founder-name">Santiago Cavanzo</div>
-            <div class="founder-role">Fundador &amp; CEO</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════
-     PRODUCTOS
-═══════════════════════════════════════════ -->
-<section id="productos" class="bg-honey-grad" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="section-label reveal">Nuestros productos</div>
-    <h2 class="section-heading reveal" style="transition-delay:.1s">
-      Conoce <em>HoneyB</em>
-    </h2>
-    <p class="body-light mt-2 mb-5 reveal" style="transition-delay:.2s; max-width:520px;">
-      Elige tu presentación y aroma.
-    </p>
-
-    <div class="row g-4 row-products">
-
-      <!-- 70 g -->
-      <!-- Imagen recomendada: 600×480px -->
-      <div class="col-md-12 reveal" style="transition-delay:.1s">
-        <div class="product-card h-100">
-          <div class="product-visual">
-            <img src="images/producto-70g.jpg"
-                 alt="HoneyB Shampoo Sólido 70g"
-                 class="product-img">
-            <span class="product-tag">Uso regular</span>
-          </div>
-          <div class="product-body">
-            <div class="product-name">HoneyB 70 g</div>
-            <p class="product-desc">
-              Formato ideal para el día a día: rinde muchísimo y deja el cabello limpio,
-              suave y con brillo natural.
-            </p>
-            <div class="product-specs">
-              <div class="spec-row"><span class="spec-label">Duración</span><span class="spec-val">35–58 lavadas (≈ 2–3 botellas)</span></div>
-              <div class="spec-row"><span class="spec-label">Ingredientes</span><span class="spec-val">Miel de abejas, romero, cúrcuma, manteca de karité, aceites esenciales</span></div>
-              <div class="spec-row"><span class="spec-label">Empaque</span><span class="spec-val">Cartón ecofriendly 100% reciclable</span></div>
-              <div class="spec-row"><span class="spec-label">Medidas</span><span class="spec-val">5,89 × 5,20 × 2,70 cm</span></div>
+        <!-- Foto fundador — recomendada 600×800px (retrato) -->
+        <div class="col-lg-5 order-lg-2 reveal from-right scale-in" style="transition-delay:.2s">
+          <div class="founder-visual">
+            <img src="images/fundador.jpg" alt="Santiago Cavanzo — Fundador Honey'B" class="founder-img">
+            <div class="founder-badge">
+              <div class="founder-name">Santiago Cavanzo</div>
+              <div class="founder-role">Fundador &amp; CEO</div>
             </div>
           </div>
         </div>
       </div>
-<!--
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     PRODUCTOS
+═══════════════════════════════════════════ -->
+  <section id="productos" class="bg-honey-grad" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="section-label reveal">Nuestros productos</div>
+      <h2 class="section-heading reveal" style="transition-delay:.1s">
+        Conoce <em>HoneyB</em>
+      </h2>
+      <p class="body-light mt-2 mb-5 reveal" style="transition-delay:.2s; max-width:520px;">
+        Elige tu presentación y aroma.
+      </p>
+
+      <div class="row g-4 row-products">
+
+        <!-- 70 g -->
+        <!-- Imagen recomendada: 600×480px -->
+        <div class="col-md-12 reveal" style="transition-delay:.1s">
+          <div class="product-card h-100">
+            <div class="product-visual">
+              <img src="images/producto-70g.jpg" alt="HoneyB Shampoo Sólido 70g" class="product-img">
+              <span class="product-tag">Uso regular</span>
+            </div>
+            <div class="product-body">
+              <div class="product-name">HoneyB 70 g</div>
+              <p class="product-desc">
+                Formato ideal para el día a día: rinde muchísimo y deja el cabello limpio,
+                suave y con brillo natural.
+              </p>
+              <div class="product-specs">
+                <div class="spec-row"><span class="spec-label">Duración</span><span class="spec-val">35–58 lavadas (≈
+                    2–3 botellas)</span></div>
+                <div class="spec-row"><span class="spec-label">Ingredientes</span><span class="spec-val">Miel de abejas,
+                    romero, cúrcuma, manteca de karité, aceites esenciales</span></div>
+                <div class="spec-row"><span class="spec-label">Empaque</span><span class="spec-val">Cartón ecofriendly
+                    100% reciclable</span></div>
+                <div class="spec-row"><span class="spec-label">Medidas</span><span class="spec-val">5,89 × 5,20 × 2,70
+                    cm</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
      
    
       <div class="col-md-6 reveal" style="transition-delay:.2s">
@@ -286,649 +326,670 @@
 
     </div>
 -->
-    <!-- CTA hotelería -->
-    <div class="text-center mt-5 reveal" style="transition-delay:.3s">
-      <a href="#hoteleria" class="btn-hb-outline">¿Eres hotel o glamping? Cotiza aquí →</a>
-    </div>
+        <!-- CTA hotelería -->
+        <div class="text-center mt-5 reveal" style="transition-delay:.3s">
+          <a href="#hoteleria" class="btn-hb-outline">¿Eres hotel o glamping? Cotiza aquí →</a>
+        </div>
 
-    <!-- Banda envíos -->
-    <div class="shipping-strip reveal mt-4" style="transition-delay:.4s">
-      <span>🇨🇴 Envíos a Colombia</span>
-      <span class="trust-sep">·</span>
-      <span>✈️ Despachos internacionales (consulta destino)</span>
-    </div>
-  </div>
-</section>
+        <!-- Banda envíos -->
+        <div class="shipping-strip reveal mt-4" style="transition-delay:.4s">
+          <span>🇨🇴 Envíos a Colombia</span>
+          <span class="trust-sep">·</span>
+          <span>✈️ Despachos internacionales (consulta destino)</span>
+        </div>
+      </div>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      CÓMO SE USA
 ═══════════════════════════════════════════ -->
-<section id="como-usar" class="bg-dark-hb" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="section-label light reveal">Cómo se usa</div>
-    <h2 class="section-heading on-dark reveal" style="transition-delay:.1s">
-      ¿Primera vez con shampoo sólido? <em>Es facilísimo.</em>
-    </h2>
-    <p class="body-light-inv mt-2 mb-5 reveal" style="transition-delay:.2s; max-width:520px;">
-      3 pasos y listo: una rutina premium, más limpia y sin plástico.
-    </p>
+  <section id="como-usar" class="bg-honey-pastel" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="section-label light reveal">Cómo se usa</div>
+      <h2 class="section-heading on-dark reveal" style="transition-delay:.1s">
+        ¿Primera vez con shampoo sólido? <em>Es facilísimo.</em>
+      </h2>
+      <p class="body-light-inv mt-2 mb-5 reveal" style="transition-delay:.2s; max-width:520px;">
+        3 pasos y listo: una rutina premium, más limpia y sin plástico.
+      </p>
 
-    <!-- Espacio para video — recomendado 16:9 -->
-<div class="video-placeholder reveal mb-5" id="videoContainer" style="transition-delay:.25s">
-  <img src="images/video-thumbnail.png" alt="Cómo usar HoneyB" class="video-thumb-img" id="videoThumb" style="width: 100%; height: 100%; object-fit: cover;">
-  
-  <video id="mainVideo" class="d-none" controls playsinline>
-    <source src="images/video-thumbnail.mp4" type="video/mp4">
-  </video>
+      <!-- Espacio para video — recomendado 16:9 -->
+      <div class="video-placeholder reveal mb-5" id="videoContainer" style="transition-delay:.25s">
+        <img src="images/video-thumbnail.png" alt="Cómo usar HoneyB" class="video-thumb-img" id="videoThumb"
+          style="width: 100%; height: 100%; object-fit: cover;">
 
-  <div class="video-play-overlay" id="playOverlay">
-    <div class="video-play-btn"><i class="bi bi-play-fill"></i></div>
-    <p class="video-caption">Cómo usar HoneyB en 15 segundos</p>
-  </div>
-</div>
+        <video id="mainVideo" class="d-none" controls playsinline>
+          <source src="images/video-thumbnail.mp4" type="video/mp4">
+        </video>
 
-    <div class="row g-4 row-products">
-      <div class="col-md-4 reveal" style="transition-delay:.1s">
-        <div class="step-card">
-          <div class="step-num">01</div>
-          <div class="step-title">Humedece</div>
-          <p class="step-desc">Moja tu cabello y la barra.</p>
+        <div class="video-play-overlay" id="playOverlay">
+          <div class="video-play-btn"><i class="bi bi-play-fill"></i></div>
+          <p class="video-caption">Cómo usar HoneyB en 15 segundos</p>
         </div>
       </div>
-      <div class="col-md-4 reveal" style="transition-delay:.2s">
-        <div class="step-card">
-          <div class="step-num">02</div>
-          <div class="step-title">Activa la espuma</div>
-          <p class="step-desc">Frota la barra en tus manos o directamente en el cabello hasta generar espuma cremosa.</p>
+
+      <div class="row g-4 row-products">
+        <div class="col-md-4 reveal" style="transition-delay:.1s">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <div class="step-title">Humedece</div>
+            <p class="step-desc">Moja tu cabello y la barra.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal" style="transition-delay:.2s">
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <div class="step-title">Activa la espuma</div>
+            <p class="step-desc">Frota la barra en tus manos o directamente en el cabello hasta generar espuma cremosa.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal" style="transition-delay:.3s">
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <div class="step-title">Masajea y enjuaga</div>
+            <p class="step-desc">Masajea como siempre y enjuaga con agua.</p>
+          </div>
         </div>
       </div>
-      <div class="col-md-4 reveal" style="transition-delay:.3s">
-        <div class="step-card">
-          <div class="step-num">03</div>
-          <div class="step-title">Masajea y enjuaga</div>
-          <p class="step-desc">Masajea como siempre y enjuaga con agua.</p>
-        </div>
+
+      <div class="tip-box reveal mt-4" style="transition-delay:.4s">
+        <span class="tip-icon">💡</span>
+        <span><strong>Tip para que dure más:</strong> Déjala secar en una jabonera con drenaje, lejos del chorro
+          directo.</span>
       </div>
     </div>
-
-    <div class="tip-box reveal mt-4" style="transition-delay:.4s">
-      <span class="tip-icon">💡</span>
-      <span><strong>Tip para que dure más:</strong> Déjala secar en una jabonera con drenaje, lejos del chorro directo.</span>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      AROMAS
 ═══════════════════════════════════════════ -->
-<section id="aromas" class="bg-cream" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="section-label reveal">Aromas</div>
-    <h2 class="section-heading reveal" style="transition-delay:.1s">
-      Tres aromas, un sello: limpio, <em>elegante</em> y memorable.
-    </h2>
-    <p class="body-light mt-2 mb-5 reveal" style="transition-delay:.2s; max-width:560px;">
-      Aromas diseñados para quedarse en la memoria, sin saturar: frescos, limpios y sofisticados.
-    </p>
+  <section id="aromas" class="bg-cream" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="section-label reveal">Aromas</div>
+      <h2 class="section-heading reveal" style="transition-delay:.1s">
+        Tres aromas, un sello: limpio, <em>elegante</em> y memorable.
+      </h2>
+      <p class="body-light mt-2 mb-5 reveal" style="transition-delay:.2s; max-width:560px;">
+        Aromas diseñados para quedarse en la memoria, sin saturar: frescos, limpios y sofisticados.
+      </p>
 
-    <div class="row g-4 row-products">
+      <div class="row g-4 row-products">
 
-      <!-- Lino Blanco -->
-      <!-- Imagen recomendada: 480×360px -->
-      <div class="col-md-4 reveal" style="transition-delay:.1s">
-        <div class="aroma-card h-100">
-          <div class="aroma-visual aroma-lino">
-            <img src="images/aroma-lino-blanco.jpg"
-                 alt="Lino Blanco — White Linen"
-                 class="product-img">
-            <span class="aroma-tag">Lino Blanco</span>
-          </div>
-          <div class="aroma-body">
-            <div class="aroma-name">White Linen</div>
-            <div class="aroma-feel">limpio · minimalista · universal</div>
-            <p class="aroma-copy">Frescura elegante que combina con todo.</p>
+        <!-- Lino Blanco -->
+        <!-- Imagen recomendada: 480×360px -->
+        <div class="col-md-4 reveal" style="transition-delay:.1s">
+          <div class="aroma-card h-100">
+            <div class="aroma-visual aroma-lino">
+              <img src="images/aroma-lino-blanco.jpg" alt="Lino Blanco — White Linen" class="product-img">
+              <span class="aroma-tag">Lino Blanco</span>
+            </div>
+            <div class="aroma-body">
+              <div class="aroma-name">White Linen</div>
+              <div class="aroma-feel">limpio · minimalista · universal</div>
+              <p class="aroma-copy">Frescura elegante que combina con todo.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Flor de Café -->
-      <div class="col-md-4 reveal" style="transition-delay:.2s">
-        <div class="aroma-card h-100">
-          <div class="aroma-visual aroma-cafe">
-            <img src="images/aroma-flor-cafe.jpg"
-                 alt="Flor de Café — Coffee Blossom"
-                 class="product-img">
-            <span class="aroma-tag">Flor de Café</span>
-          </div>
-          <div class="aroma-body">
-            <div class="aroma-name">Coffee Blossom</div>
-            <div class="aroma-feel">Colombia sofisticada · memorable · nada dulce</div>
-            <p class="aroma-copy">Un sello distintivo, fino y único.</p>
+        <!-- Flor de Café -->
+        <div class="col-md-4 reveal" style="transition-delay:.2s">
+          <div class="aroma-card h-100">
+            <div class="aroma-visual aroma-cafe">
+              <img src="images/aroma-flor-cafe.jpg" alt="Flor de Café — Coffee Blossom" class="product-img">
+              <span class="aroma-tag">Flor de Café</span>
+            </div>
+            <div class="aroma-body">
+              <div class="aroma-name">Coffee Blossom</div>
+              <div class="aroma-feel">Colombia sofisticada · memorable · nada dulce</div>
+              <p class="aroma-copy">Un sello distintivo, fino y único.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Bosque Andino -->
-      <div class="col-md-4 reveal" style="transition-delay:.3s">
-        <div class="aroma-card h-100">
-          <div class="aroma-visual aroma-bosque">
-            <img src="images/aroma-bosque-andino.jpg"
-                 alt="Bosque Andino — Andean Forest"
-                 class="product-img">
-            <span class="aroma-tag">Bosque Andino</span>
-          </div>
-          <div class="aroma-body">
-            <div class="aroma-name">Andean Forest</div>
-            <div class="aroma-feel">spa moderno · fresco-verde · naturaleza premium</div>
-            <p class="aroma-copy">Verde, limpio y revitalizante.</p>
+        <!-- Bosque Andino -->
+        <div class="col-md-4 reveal" style="transition-delay:.3s">
+          <div class="aroma-card h-100">
+            <div class="aroma-visual aroma-bosque">
+              <img src="images/aroma-bosque-andino.jpg" alt="Bosque Andino — Andean Forest" class="product-img">
+              <span class="aroma-tag">Bosque Andino</span>
+            </div>
+            <div class="aroma-body">
+              <div class="aroma-name">Andean Forest</div>
+              <div class="aroma-feel">spa moderno · fresco-verde · naturaleza premium</div>
+              <p class="aroma-copy">Verde, limpio y revitalizante.</p>
+            </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      IMPACTO
 ═══════════════════════════════════════════ -->
-<section id="impacto" class="bg-dark-green" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="section-label green-lbl reveal">Compromiso</div>
-    <h2 class="section-heading on-dark mb-3 reveal" style="transition-delay:.1s">
-      Impacto que se siente. <em>Impacto que se mide.</em>
-    </h2>
-    <p class="body-light-inv mt-0 mb-5 reveal" style="transition-delay:.2s; max-width:580px;">
-      Lo que pones en tu cabello también termina en el agua. Por eso nuestra fórmula es libre de
-      químicos contaminantes, y al ser sólida reduce el uso de envases.
-    </p>
+  <section id="impacto" class="bg-dark-green" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="section-label green-lbl reveal">Compromiso</div>
+      <h2 class="section-heading on-dark mb-3 reveal" style="transition-delay:.1s">
+        Impacto que se siente. <em>Impacto que se mide.</em>
+      </h2>
+      <p class="body-light-inv mt-0 mb-5 reveal" style="transition-delay:.2s; max-width:580px;">
+        Lo que pones en tu cabello también termina en el agua. Por eso nuestra fórmula es libre de
+        químicos contaminantes, y al ser sólida reduce el uso de envases.
+      </p>
 
-    <div class="row g-4 row-sost">
-      <div class="col-md-4 reveal" style="transition-delay:.1s">
-        <div class="sost-card">
-          <div class="sost-name">Agua más limpia</div>
-          <p class="sost-desc">Fórmula libre de químicos contaminantes para un cuidado responsable con el entorno.</p>
+      <div class="row g-4 row-sost">
+        <div class="col-md-4 reveal" style="transition-delay:.1s">
+          <div class="sost-card">
+            <div class="sost-name">Agua más limpia</div>
+            <p class="sost-desc">Fórmula libre de químicos contaminantes para un cuidado responsable con el entorno.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4 reveal" style="transition-delay:.2s">
-        <div class="sost-card">
-          <div class="sost-name">Menos plástico</div>
-          <p class="sost-desc">Reduces envases con cada barra. Empaque 100% ecofriendly y reciclable.</p>
+        <div class="col-md-4 reveal" style="transition-delay:.2s">
+          <div class="sost-card">
+            <div class="sost-name">Menos plástico</div>
+            <p class="sost-desc">Reduces envases con cada barra. Empaque 100% ecofriendly y reciclable.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4 reveal" style="transition-delay:.3s">
-        <div class="sost-card">
-          <div class="sost-name">Rinde más</div>
-          <p class="sost-desc">Hasta 58 lavadas por barra. Menos compras, menos residuos, más valor real.</p>
+        <div class="col-md-4 reveal" style="transition-delay:.3s">
+          <div class="sost-card">
+            <div class="sost-name">Rinde más</div>
+            <p class="sost-desc">Hasta 58 lavadas por barra. Menos compras, menos residuos, más valor real.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      PROVEEDORES
 ═══════════════════════════════════════════ -->
-<section id="proveedores" class="bg-warm" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      
-      <div class="col-lg-4 reveal from-left">
-        <div class="section-label">Cadena de valor</div>
-        <h2 class="section-heading mb-4">Detrás de cada barra, <em>hay un territorio</em></h2>
-        <p class="body-light mb-4">
-          La miel proviene de la <strong>Fundación Skambra Al Desarrollo</strong> (Tierralta, Córdoba). 
-          Más que un proveedor, es un aliado. Elegimos esta cadena porque un producto premium 
-          debe tener una historia coherente: calidad real y trazabilidad.
-        </p>
-        <div class="d-flex flex-column gap-3 mt-4">
-          <div><i class="bi bi-search text-honey"></i> Miel de origen verificado</div>
-          <div><i class="bi bi-heart text-honey"></i> Comercio responsable</div>
-          <div><i class="bi bi-people text-honey"></i> Impacto en apicultores</div>
-        </div>
-      </div>
+  <section id="proveedores" class="bg-green-pastel" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="row align-items-center g-5">
 
-      <div class="col-lg-8 reveal from-right">
-        <div class="row g-3">
-          <div class="col-7">
-            <img src="images/proveedores-3.jpeg" alt="Apicultores" class="img-main">
-          </div>
-          <div class="col-5 d-flex flex-column gap-3">
-            <img src="images/proveedores-2.jpeg" alt="Miel artesanal" class="img-side">
-            <img src="images/proveedores-1.jpeg" alt="Producto HoneyB" class="img-side">
+        <div class="col-lg-4 reveal from-left">
+          <div class="section-label">Cadena de valor</div>
+          <h2 class="section-heading mb-4">Detrás de cada barra, <em>hay un territorio</em></h2>
+          <p class="body-light mb-4">
+            La miel proviene de la <strong>Fundación Skambra Al Desarrollo</strong> (Tierralta, Córdoba).
+            Más que un proveedor, es un aliado. Elegimos esta cadena porque un producto premium
+            debe tener una historia coherente: calidad real y trazabilidad.
+          </p>
+          <div class="d-flex flex-column gap-3 mt-4">
+            <div><i class="bi bi-search text-honey"></i> Miel de origen verificado</div>
+            <div><i class="bi bi-heart text-honey"></i> Comercio responsable</div>
+            <div><i class="bi bi-people text-honey"></i> Impacto en apicultores</div>
           </div>
         </div>
+
+        <div class="col-lg-8 reveal from-right">
+          <div class="row g-3">
+            <div class="col-7">
+              <img src="images/proveedores-3.jpeg" alt="Apicultores" class="img-main">
+            </div>
+            <div class="col-5 d-flex flex-column gap-3">
+              <img src="images/proveedores-2.jpeg" alt="Miel artesanal" class="img-side">
+              <img src="images/proveedores-1.jpeg" alt="Producto HoneyB" class="img-side">
+            </div>
+          </div>
+        </div>
+
       </div>
-      
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      CALIDAD Y PRODUCCIÓN
 ═══════════════════════════════════════════ -->
-<section id="calidad" class="bg-dark-hb" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="section-label light reveal">Producción</div>
-    <h2 class="section-heading on-dark reveal" style="transition-delay:.1s">
-      Hecho con rigor. <em>Diseñado para resultados.</em>
-    </h2>
-    <p class="body-light-inv mt-1 mb-1 reveal" style="transition-delay:.15s; font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:rgba(245,166,35,.7);">
-      Formulación optimizada · Proceso controlado · Calidad por lote
-    </p>
-    <p class="body-light-inv mt-3 mb-5 reveal" style="transition-delay:.2s; max-width:560px;">
-      En HoneyB cuidamos cada etapa para entregar una experiencia premium constante: desde la
-      formulación hasta el empaque. Trabajamos con un proceso de producción controlado y trazable,
-      enfocado en seguridad, desempeño y consistencia.
-    </p>
+  <section id="calidad" class="bg-honey-pastel" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="section-label light reveal">Producción</div>
+      <h2 class="section-heading on-dark reveal" style="transition-delay:.1s">
+        Hecho con rigor. <em>Diseñado para resultados.</em>
+      </h2>
+      <p class="body-light-inv mt-1 mb-1 reveal"
+        style="transition-delay:.15s; font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:rgba(245,166,35,.7);">
+        Formulación optimizada · Proceso controlado · Calidad por lote
+      </p>
+      <p class="body-light-inv mt-3 mb-5 reveal" style="transition-delay:.2s; max-width:560px;">
+        En HoneyB cuidamos cada etapa para entregar una experiencia premium constante: desde la
+        formulación hasta el empaque. Trabajamos con un proceso de producción controlado y trazable,
+        enfocado en seguridad, desempeño y consistencia.
+      </p>
 
-    <div class="row g-4 row-lab">
-      <!-- Galería — imágenes recomendadas: principal 1200×600px, secundarias 600×480px -->
-      <div class="col-12 col-md-6 reveal" style="transition-delay:.1s">
-        <div class="lab-img-box wide-box">
-          <img src="images/lab-principal.jpeg" alt="Proceso de producción HoneyB" class="galeria-img">
-          <span class="lab-img-cap">Proceso de producción</span>
+      <div class="row g-4 row-lab">
+        <!-- Galería — imágenes recomendadas: principal 1200×600px, secundarias 600×480px -->
+        <div class="col-12 col-md-6 reveal" style="transition-delay:.1s">
+          <div class="lab-img-box wide-box">
+            <img src="images/lab-principal.jpeg" alt="Proceso de producción HoneyB" class="galeria-img">
+            <span class="lab-img-cap">Proceso de producción</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 reveal" style="transition-delay:.2s">
+          <div class="lab-img-box">
+            <img src="images/lab-formulacion.png" alt="Formulación" class="galeria-img">
+            <span class="lab-img-cap">Formulación</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 reveal" style="transition-delay:.3s">
+          <div class="lab-img-box">
+            <img src="images/lab-calidad.jpeg" alt="Control de calidad" class="galeria-img">
+            <span class="lab-img-cap">Control calidad</span>
+          </div>
         </div>
       </div>
-      <div class="col-6 col-md-3 reveal" style="transition-delay:.2s">
-        <div class="lab-img-box">
-          <img src="images/lab-formulacion.png" alt="Formulación" class="galeria-img">
-          <span class="lab-img-cap">Formulación</span>
+
+      <div class="row g-4 mt-4 row-lab">
+        <div class="col-md-3 col-sm-6 reveal" style="transition-delay:.1s">
+          <div class="quality-card">
+            <div class="qc-title">Formulación y estabilidad</div>
+            <p class="qc-desc">Evaluaciones de calidad y estabilidad para mantener una experiencia consistente: textura,
+              espuma y desempeño.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 reveal" style="transition-delay:.2s">
+          <div class="quality-card">
+            <div class="qc-title">Control por lote</div>
+            <p class="qc-desc">Revisión de cada lote antes de salir: apariencia, acabado y parámetros definidos de
+              calidad.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 reveal" style="transition-delay:.3s">
+          <div class="quality-card">
+            <div class="qc-title">Buenas prácticas</div>
+            <p class="qc-desc">Procesos ordenados y controlados, con estándares de higiene y manejo responsable en
+              producción.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 reveal" style="transition-delay:.4s">
+          <div class="quality-card">
+
+            <div class="qc-title">Empaque y terminado</div>
+            <p class="qc-desc">Cuidado en el detalle final para proteger el producto y conservar su calidad.</p>
+          </div>
         </div>
       </div>
-      <div class="col-6 col-md-3 reveal" style="transition-delay:.3s">
-        <div class="lab-img-box">
-          <img src="images/lab-calidad.jpeg" alt="Control de calidad" class="galeria-img">
-          <span class="lab-img-cap">Control calidad</span>
-        </div>
+
+      <div class="invima-note reveal mt-4" style="transition-delay:.5s">
+        Registro sanitario INVIMA: <strong>[NÚMERO / PENDIENTE DE ASIGNACIÓN]</strong>
       </div>
+
+      <p class="body-light-inv mt-3 fst-italic reveal" style="transition-delay:.5s; color:rgba(245,166,35,.8);">
+        Calidad premium, con procesos que generan confianza.
+      </p>
     </div>
-
-    <div class="row g-4 mt-4 row-lab">
-      <div class="col-md-3 col-sm-6 reveal" style="transition-delay:.1s">
-        <div class="quality-card">
-          <div class="qc-title">Formulación y estabilidad</div>
-          <p class="qc-desc">Evaluaciones de calidad y estabilidad para mantener una experiencia consistente: textura, espuma y desempeño.</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 reveal" style="transition-delay:.2s">
-        <div class="quality-card">
-          <div class="qc-title">Control por lote</div>
-          <p class="qc-desc">Revisión de cada lote antes de salir: apariencia, acabado y parámetros definidos de calidad.</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 reveal" style="transition-delay:.3s">
-        <div class="quality-card">
-          <div class="qc-title">Buenas prácticas</div>
-          <p class="qc-desc">Procesos ordenados y controlados, con estándares de higiene y manejo responsable en producción.</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 reveal" style="transition-delay:.4s">
-        <div class="quality-card">
-
-          <div class="qc-title">Empaque y terminado</div>
-          <p class="qc-desc">Cuidado en el detalle final para proteger el producto y conservar su calidad.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="invima-note reveal mt-4" style="transition-delay:.5s">
-      Registro sanitario INVIMA: <strong>[NÚMERO / PENDIENTE DE ASIGNACIÓN]</strong>
-    </div>
-
-    <p class="body-light-inv mt-3 fst-italic reveal" style="transition-delay:.5s; color:rgba(245,166,35,.8);">
-      Calidad premium, con procesos que generan confianza.
-    </p>
-  </div>
-</section>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      TESTIMONIOS
 ═══════════════════════════════════════════ -->
-<section id="testimonios" class="bg-cream" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="section-label reveal">Testimonios</div>
-    <h2 class="section-heading mb-5 reveal" style="transition-delay:.1s">
-      Lo que dicen nuestros <em>clientes</em>
-    </h2>
+  <section id="testimonios" class="bg-cream" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="section-label reveal">Testimonios</div>
+      <h2 class="section-heading mb-5 reveal" style="transition-delay:.1s">
+        Lo que dicen nuestros <em>clientes</em>
+      </h2>
 
-    <div class="row g-4 row-products">
-      <div class="col-md-6 reveal" style="transition-delay:.1s">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">
-            "Me encantó HoneyB: en mi cabello crespo me ayuda a mantener los rizos hidratados y,
-            aunque tengo la piel muy seca y alérgica, me funcionó súper bien. Lo recomiendo."
-          </p>
-          <div class="testimonial-author">Cliente HoneyB — Bucaramanga</div>
+      <div class="row g-4 row-products">
+        <div class="col-md-6 reveal" style="transition-delay:.1s">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Me encantó HoneyB: en mi cabello crespo me ayuda a mantener los rizos hidratados y,
+              aunque tengo la piel muy seca y alérgica, me funcionó súper bien. Lo recomiendo."
+            </p>
+            <div class="testimonial-author">Cliente HoneyB — Bucaramanga</div>
+          </div>
+        </div>
+        <div class="col-md-6 reveal" style="transition-delay:.2s">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Descubrí este shampoo sólido de miel en Colombia y me encantó. Es realmente genial:
+              lo recomiendo 100%. ¡Vive la experiencia HoneyB!"
+            </p>
+            <div class="testimonial-author">Cliente internacional — Francia</div>
+          </div>
         </div>
       </div>
-      <div class="col-md-6 reveal" style="transition-delay:.2s">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">
-            "Descubrí este shampoo sólido de miel en Colombia y me encantó. Es realmente genial:
-            lo recomiendo 100%. ¡Vive la experiencia HoneyB!"
-          </p>
-          <div class="testimonial-author">Cliente internacional — Francia</div>
-        </div>
-      </div>
+
+      <p class="disclaimer-note reveal mt-4" style="transition-delay:.3s">
+        HoneyB ha evolucionado desde 2022. Algunos testimonios pueden mostrar presentaciones anteriores;
+        hoy contamos con una fórmula optimizada y una experiencia más consistente.
+      </p>
     </div>
-
-    <p class="disclaimer-note reveal mt-4" style="transition-delay:.3s">
-      HoneyB ha evolucionado desde 2022. Algunos testimonios pueden mostrar presentaciones anteriores;
-      hoy contamos con una fórmula optimizada y una experiencia más consistente.
-    </p>
-  </div>
-</section>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      FAQ
 ═══════════════════════════════════════════ -->
-<section id="faq" class="bg-warm" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="section-label reveal">Preguntas frecuentes</div>
-    <h2 class="section-heading mb-5 reveal" style="transition-delay:.1s">
-      Todo lo que necesitas <em>saber</em>
-    </h2>
+  <section id="faq" class="bg-warm" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="section-label reveal">Preguntas frecuentes</div>
+      <h2 class="section-heading mb-5 reveal" style="transition-delay:.1s">
+        Todo lo que necesitas <em>saber</em>
+      </h2>
 
-    <div class="row justify-content-center">
-      <div class="col-lg-8 reveal" style="transition-delay:.2s">
-        <div class="accordion" id="faqAccordion">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 reveal" style="transition-delay:.2s">
+          <div class="accordion" id="faqAccordion">
 
-          <div class="faq-item">
-            <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq1">
-              ¿Cómo se usa?
-            </button>
-            <div id="faq1" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
-              <div class="faq-a">Humedece el cabello, frota la barra en las manos o directamente sobre el cabello, masajea y enjuaga.</div>
+            <div class="faq-item">
+              <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq1">
+                ¿Cómo se usa?
+              </button>
+              <div id="faq1" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
+                <div class="faq-a">Humedece el cabello, frota la barra en las manos o directamente sobre el cabello,
+                  masajea y enjuaga.</div>
+              </div>
             </div>
-          </div>
 
-          <div class="faq-item">
-            <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq2">
-              ¿Cómo lo conservo para que dure más?
-            </button>
-            <div id="faq2" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
-              <div class="faq-a">Déjalo secar en una jabonera con drenaje, lejos del chorro directo. Entre más se seque, más dura.</div>
+            <div class="faq-item">
+              <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq2">
+                ¿Cómo lo conservo para que dure más?
+              </button>
+              <div id="faq2" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
+                <div class="faq-a">Déjalo secar en una jabonera con drenaje, lejos del chorro directo. Entre más se
+                  seque, más dura.</div>
+              </div>
             </div>
-          </div>
 
-          <div class="faq-item">
-            <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq3">
-              ¿Cuánto dura?
-            </button>
-            <div id="faq3" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
-              <div class="faq-a">70 g: 35–58 lavadas aprox. (≈ 2–3 botellas según uso). 20 g: 10–16 lavadas aprox. (≈ 0,5–1 botella según uso).</div>
+            <div class="faq-item">
+              <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq3">
+                ¿Cuánto dura?
+              </button>
+              <div id="faq3" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
+                <div class="faq-a">70 g: 35–58 lavadas aprox. (≈ 2–3 botellas según uso). 20 g: 10–16 lavadas aprox. (≈
+                  0,5–1 botella según uso).</div>
+              </div>
             </div>
-          </div>
 
-          <div class="faq-item">
-            <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq4">
-              ¿Para qué tipo de cabello es?
-            </button>
-            <div id="faq4" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
-              <div class="faq-a">Es una opción de uso diario pensada para una rutina práctica y premium. Si nos cuentas tu necesidad por WhatsApp, te orientamos.</div>
+            <div class="faq-item">
+              <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq4">
+                ¿Para qué tipo de cabello es?
+              </button>
+              <div id="faq4" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
+                <div class="faq-a">Es una opción de uso diario pensada para una rutina práctica y premium. Si nos
+                  cuentas tu necesidad por WhatsApp, te orientamos.</div>
+              </div>
             </div>
-          </div>
 
-          <div class="faq-item">
-            <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq5">
-              ¿Hace buena espuma?
-            </button>
-            <div id="faq5" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
-              <div class="faq-a">Sí. Genera espuma cremosa para una experiencia cómoda y premium.</div>
+            <div class="faq-item">
+              <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq5">
+                ¿Hace buena espuma?
+              </button>
+              <div id="faq5" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
+                <div class="faq-a">Sí. Genera espuma cremosa para una experiencia cómoda y premium.</div>
+              </div>
             </div>
-          </div>
 
-          <div class="faq-item">
-            <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq6">
-              ¿Es para toda la familia?
-            </button>
-            <div id="faq6" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
-              <div class="faq-a">Sí, es ideal para una rutina diaria en casa.</div>
+            <div class="faq-item">
+              <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq6">
+                ¿Es para toda la familia?
+              </button>
+              <div id="faq6" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
+                <div class="faq-a">Sí, es ideal para una rutina diaria en casa.</div>
+              </div>
             </div>
-          </div>
 
-          <div class="faq-item">
-            <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq7">
-              ¿Puedo comprar para hotelería o glamping?
-            </button>
-            <div id="faq7" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
-              <div class="faq-a">Sí. Tenemos presentación de 20 g ideal para amenidades premium. Escríbenos para cotizar.</div>
+            <div class="faq-item">
+              <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq7">
+                ¿Puedo comprar para hotelería o glamping?
+              </button>
+              <div id="faq7" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
+                <div class="faq-a">Sí. Tenemos presentación de 20 g ideal para amenidades premium. Escríbenos para
+                  cotizar.</div>
+              </div>
             </div>
-          </div>
 
-          <div class="faq-item">
-            <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq8">
-              ¿Por qué en algunas fotos el empaque se ve diferente?
-            </button>
-            <div id="faq8" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
-              <div class="faq-a">HoneyB ha evolucionado desde 2022. Algunas imágenes corresponden a versiones anteriores. Hoy contamos con una presentación actualizada y una fórmula optimizada para una experiencia más consistente.</div>
+            <div class="faq-item">
+              <button class="faq-q" data-bs-toggle="collapse" data-bs-target="#faq8">
+                ¿Por qué en algunas fotos el empaque se ve diferente?
+              </button>
+              <div id="faq8" class="collapse faq-a-wrap" data-bs-parent="#faqAccordion">
+                <div class="faq-a">HoneyB ha evolucionado desde 2022. Algunas imágenes corresponden a versiones
+                  anteriores. Hoy contamos con una presentación actualizada y una fórmula optimizada para una
+                  experiencia más consistente.</div>
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      INSTAGRAM / REDES
 ═══════════════════════════════════════════ -->
-<section id="instagram" class="bg-warm text-center" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="section-label reveal justify-content-center">Síguenos</div>
-    <h2 class="section-heading reveal text-center mb-5" style="transition-delay:.1s;">
-      @honeyb_natural_<em>cosmetics</em>
-    </h2>
+  <section id="instagram" class="bg-warm text-center" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="section-label reveal justify-content-center">Síguenos</div>
+      <h2 class="section-heading reveal text-center mb-5" style="transition-delay:.1s;">
+        @honeyb_natural_<em>cosmetics</em>
+      </h2>
 
-    <div class="reveal mt-4 mb-5" style="transition-delay:.2s;">
-      <div class="sk-instagram-feed" data-embed-id="25663147"></div>
-      <script src="https://widgets.sociablekit.com/instagram-feed/widget.js" defer></script>
+      <div class="reveal mt-4 mb-5" style="transition-delay:.2s;">
+        <div class="sk-instagram-feed" data-embed-id="25663147"></div>
+        <script src="https://widgets.sociablekit.com/instagram-feed/widget.js" defer></script>
+      </div>
+
+
+      <div class="d-flex justify-content-center gap-3 flex-wrap reveal" style="transition-delay:.3s;">
+        <a href="https://www.instagram.com/honeyb_natural_cosmetics/" target="_blank" rel="noopener noreferrer"
+          class="btn-ig">
+          <i class="bi bi-instagram"></i> Instagram
+        </a>
+        <a href="https://www.tiktok.com/@honeyb_natural_cosmetics" target="_blank" rel="noopener noreferrer"
+          class="btn-tiktok">
+          <i class="bi bi-tiktok"></i> TikTok
+        </a>
+      </div>
     </div>
-
-   
-    <div class="d-flex justify-content-center gap-3 flex-wrap reveal" style="transition-delay:.3s;">
-      <a href="https://www.instagram.com/honeyb_natural_cosmetics/"
-         target="_blank" rel="noopener noreferrer" class="btn-ig">
-        <i class="bi bi-instagram"></i> Instagram
-      </a>
-      <a href="https://www.tiktok.com/@honeyb_natural_cosmetics"
-         target="_blank" rel="noopener noreferrer" class="btn-tiktok">
-        <i class="bi bi-tiktok"></i> TikTok
-      </a>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      HOTELERÍA & GLAMPING
 ═══════════════════════════════════════════ -->
-<section id="hoteleria" class="bg-dark-hb" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="section-label light reveal">B2B</div>
-    <h2 class="section-heading on-dark reveal" style="transition-delay:.1s">
-      Hotelería &amp; <em>Glamping</em>
-    </h2>
-    <p class="body-light-inv mt-2 mb-5 reveal" style="transition-delay:.2s; max-width:560px;">
-      Amenidad premium que eleva la experiencia del huésped y reduce residuos.
-    </p>
+  <section id="hoteleria" class="bg-honey-pastel" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="section-label light reveal">B2B</div>
+      <h2 class="section-heading on-dark reveal" style="transition-delay:.1s">
+        Hotelería &amp; <em>Glamping</em>
+      </h2>
+      <p class="body-light-inv mt-2 mb-5 reveal" style="transition-delay:.2s; max-width:560px;">
+        Amenidad premium que eleva la experiencia del huésped y reduce residuos.
+      </p>
 
-    <div class="row g-5 align-items-start">
-      <!-- Info izquierda -->
-      <div class="col-lg-6 reveal from-left" style="transition-delay:.15s">
-        <p class="body-light-inv mb-4">
-          Ofrece a tus huéspedes un shampoo sólido de calidad premium, con fragancias limpias y
-          sofisticadas, en una presentación ideal para hospitalidad (20 g). Una experiencia
-          memorable, con empaque ecofriendly y una propuesta alineada con la reducción de plásticos.
-        </p>
+      <div class="row g-5 align-items-start">
+        <!-- Info izquierda -->
+        <div class="col-lg-6 reveal from-left" style="transition-delay:.15s">
+          <p class="body-light-inv mb-4">
+            Ofrece a tus huéspedes un shampoo sólido de calidad premium, con fragancias limpias y
+            sofisticadas, en una presentación ideal para hospitalidad (20 g). Una experiencia
+            memorable, con empaque ecofriendly y una propuesta alineada con la reducción de plásticos.
+          </p>
 
-        <div class="hotel-specs-box mb-4">
-          <div class="hspec-row"><span class="hspec-label">Presentación</span><span class="hspec-val">20 g (amenidad premium)</span></div>
-          <div class="hspec-row"><span class="hspec-label">Duración</span><span class="hspec-val">10–16 lavadas (≈ 0,5–1 botella)</span></div>
-          <div class="hspec-row"><span class="hspec-label">Empaque</span><span class="hspec-val">Cartón ecofriendly 100% reciclable</span></div>
-          <div class="hspec-row"><span class="hspec-label">Aromas</span><span class="hspec-val">Lino Blanco / Flor de Café / Bosque Andino</span></div>
-          <div class="hspec-row"><span class="hspec-label">Ideal para</span><span class="hspec-val">Hoteles boutique, glamping, spas, experiencias exclusivas</span></div>
+          <div class="hotel-specs-box mb-4">
+            <div class="hspec-row"><span class="hspec-label">Presentación</span><span class="hspec-val">20 g (amenidad
+                premium)</span></div>
+            <div class="hspec-row"><span class="hspec-label">Duración</span><span class="hspec-val">10–16 lavadas (≈
+                0,5–1 botella)</span></div>
+            <div class="hspec-row"><span class="hspec-label">Empaque</span><span class="hspec-val">Cartón ecofriendly
+                100% reciclable</span></div>
+            <div class="hspec-row"><span class="hspec-label">Aromas</span><span class="hspec-val">Lino Blanco / Flor de
+                Café / Bosque Andino</span></div>
+            <div class="hspec-row"><span class="hspec-label">Ideal para</span><span class="hspec-val">Hoteles boutique,
+                glamping, spas, experiencias exclusivas</span></div>
+          </div>
+
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="https://wa.me/573180775959?text=Hola%2C%20quiero%20cotizar%20amenidades%20HoneyB%20para%20hotelería"
+              target="_blank" rel="noopener noreferrer" class="btn-premium">
+              <i class="bi bi-whatsapp me-1"></i> Solicitar cotización
+            </a>
+          </div>
+          <p class="body-light-inv mt-3" style="font-size:.78rem; opacity:.6;">
+            Responde en menos de 24–48 h hábiles con propuesta según tu necesidad.
+          </p>
         </div>
 
-       <div class="d-flex gap-3 flex-wrap">
-  <a href="https://wa.me/573180775959?text=Hola%2C%20quiero%20cotizar%20amenidades%20HoneyB%20para%20hotelería"
-     target="_blank" 
-     rel="noopener noreferrer" 
-     class="btn-premium">
-    <i class="bi bi-whatsapp me-1"></i> Solicitar cotización
-  </a>
-</div>
-        <p class="body-light-inv mt-3" style="font-size:.78rem; opacity:.6;">
-          Responde en menos de 24–48 h hábiles con propuesta según tu necesidad.
-        </p>
-      </div>
-
-      <!-- Cards derecha -->
-      <div class="col-lg-6 reveal from-right" style="transition-delay:.25s">
-        <div class="hotel-reason-block mb-4">
-          <div class="hotel-reason-title">¿Por qué a tus huéspedes les encanta?</div>
-          <div class="hotel-reason-item">Sensación premium: espuma cremosa, limpieza efectiva, aroma elegante</div>
-          <div class="hotel-reason-item">Práctico y bonito: perfecto para kits de bienvenida y experiencia "wow"</div>
-          <div class="hotel-reason-item">Producto memorable: mejora la percepción de marca del hotel</div>
-        </div>
-        <div class="hotel-reason-block">
-          <div class="hotel-reason-title">¿Por qué le conviene a tu operación?</div>
-          <div class="hotel-reason-item">Reduce residuos plásticos frente a amenidades líquidas en envase</div>
-          <div class="hotel-reason-item">Mayor valor percibido por huésped (experiencia de lujo sin saturar)</div>
-          <div class="hotel-reason-item">Cotización flexible según volumen, personalización y destino</div>
+        <!-- Cards derecha -->
+        <div class="col-lg-6 reveal from-right" style="transition-delay:.25s">
+          <div class="hotel-reason-block mb-4">
+            <div class="hotel-reason-title">¿Por qué a tus huéspedes les encanta?</div>
+            <div class="hotel-reason-item">Sensación premium: espuma cremosa, limpieza efectiva, aroma elegante</div>
+            <div class="hotel-reason-item">Práctico y bonito: perfecto para kits de bienvenida y experiencia "wow"</div>
+            <div class="hotel-reason-item">Producto memorable: mejora la percepción de marca del hotel</div>
+          </div>
+          <div class="hotel-reason-block">
+            <div class="hotel-reason-title">¿Por qué le conviene a tu operación?</div>
+            <div class="hotel-reason-item">Reduce residuos plásticos frente a amenidades líquidas en envase</div>
+            <div class="hotel-reason-item">Mayor valor percibido por huésped (experiencia de lujo sin saturar)</div>
+            <div class="hotel-reason-item">Cotización flexible según volumen, personalización y destino</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      CONTACTO
 ═══════════════════════════════════════════ -->
-<section id="contacto" class="bg-cream" style="padding: 7rem 0;">
-  <div class="container">
-    <div class="section-label reveal">Contacto</div>
-    <h2 class="section-heading mb-2 reveal" style="transition-delay:.1s">
-      <em>Hablemos</em>
-    </h2>
-    <p class="body-light mb-5 reveal" style="transition-delay:.2s;">
-      Dudas, alianzas o cotizaciones.
-    </p>
+  <section id="contacto" class="bg-cream" style="padding: 7rem 0;">
+    <div class="container">
+      <div class="section-label reveal">Contacto</div>
+      <h2 class="section-heading mb-2 reveal" style="transition-delay:.1s">
+        <em>Hablemos</em>
+      </h2>
+      <p class="body-light mb-5 reveal" style="transition-delay:.2s;">
+        Dudas, alianzas o cotizaciones.
+      </p>
 
-    <div class="row g-4 justify-content-center"> <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.1s">
-    <div class="contact-card">
-      <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
-      <div class="contact-label">Base</div>
-      <div class="contact-val">Bucaramanga, Colombia</div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.1s">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="contact-label">Base</div>
+            <div class="contact-val">Bucaramanga, Colombia</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.2s">
+          <a href="https://wa.me/573180775959" target="_blank" rel="noopener noreferrer"
+            class="contact-card contact-card-link">
+            <div class="contact-icon" style="color:#25D366"><i class="bi bi-whatsapp"></i></div>
+            <div class="contact-label">WhatsApp</div>
+            <div class="contact-val">+57 318 077 5959</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.3s">
+          <a href="mailto:honeybcorporativo@gmail.com" class="contact-card contact-card-link">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div class="contact-label">Correo</div>
+            <div class="contact-val">honeybcorporativo@gmail.com</div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="d-flex gap-3 flex-wrap mt-5 reveal" style="transition-delay:.5s">
+        <a href="https://wa.me/573180775959" target="_blank" rel="noopener noreferrer" class="btn-hb-dark">
+          <i class="bi bi-whatsapp me-1"></i> Soporte por WhatsApp
+        </a>
+        <a href="https://wa.me/573180775959?text=Hola%2C%20quiero%20cotizar%20amenidades%20HoneyB%20para%20hotelería"
+          target="_blank" rel="noopener noreferrer" class="btn-hb-outline">
+          Cotizar hotelería
+        </a>
+      </div>
     </div>
-  </div>
-      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.2s">
-    <a href="https://wa.me/573180775959" target="_blank" rel="noopener noreferrer" class="contact-card contact-card-link">
-      <div class="contact-icon" style="color:#25D366"><i class="bi bi-whatsapp"></i></div>
-      <div class="contact-label">WhatsApp</div>
-      <div class="contact-val">+57 318 077 5959</div>
-    </a>
-  </div>
-      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:.3s">
-    <a href="mailto:honeybcorporativo@gmail.com" class="contact-card contact-card-link">
-      <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
-      <div class="contact-label">Correo</div>
-      <div class="contact-val">honeybcorporativo@gmail.com</div>
-    </a>
-  </div>
-       
-    </div>
-
-    <div class="d-flex gap-3 flex-wrap mt-5 reveal" style="transition-delay:.5s">
-      <a href="https://wa.me/573180775959" target="_blank" rel="noopener noreferrer" class="btn-hb-dark">
-        <i class="bi bi-whatsapp me-1"></i> Soporte por WhatsApp
-      </a>
-      <a href="https://wa.me/573180775959?text=Hola%2C%20quiero%20cotizar%20amenidades%20HoneyB%20para%20hotelería" target="_blank" rel="noopener noreferrer" class="btn-hb-outline">
-        Cotizar hotelería
-      </a>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      FOOTER
 ═══════════════════════════════════════════ -->
-<footer id="footer">
-  <div class="container">
-    <div class="row g-4 g-lg-5">
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
 
-      <div class="col-lg-4 reveal">
-        <div class="footer-brand-name">HONEY<span>'</span>B</div>
-        <p class="footer-brand-tagline">
-          Shampoo sólido premium con miel. Desde Colombia con propósito.
-          Fórmula más limpia. Rinde más. Se siente mejor.
-        </p>
+        <div class="col-lg-4 reveal">
+          <a href="#hero" class="d-inline-block mb-3">
+            <img src="images/logo-blanco.png" alt="Honey'B" class="footer-logo">
+          </a>
+          <p class="footer-brand-tagline mt-0">
+            Shampoo sólido premium con miel. Desde Colombia con propósito.
+            Fórmula más limpia. Rinde más. Se siente mejor.
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-2 reveal" style="transition-delay:.1s;">
+          <div class="footer-col-title">Navegar</div>
+          <ul class="footer-links-list">
+            <li><a href="#porque">Por qué HoneyB</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#aromas">Aromas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2 reveal" style="transition-delay:.2s;">
+          <div class="footer-col-title">Empresa</div>
+          <ul class="footer-links-list">
+            <li><a href="#proveedores">Proveedores</a></li>
+            <li><a href="#calidad">Calidad</a></li>
+            <li><a href="#hoteleria">Hotelería</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2 reveal" style="transition-delay:.3s;">
+          <div class="footer-col-title">Contacto</div>
+          <ul class="footer-links-list">
+            <li><a href="https://wa.me/573180775959" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="mailto:honeybcorporativo@gmail.com">Correo</a></li>
+            <li><a href="https://www.instagram.com/honeyb_natural_cosmetics/" target="_blank"
+                rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@honeyb_natural_cosmetics" target="_blank"
+                rel="noopener noreferrer">TikTok</a></li>
+          </ul>
+        </div>
+
       </div>
 
-      <div class="col-6 col-lg-2 reveal" style="transition-delay:.1s;">
-        <div class="footer-col-title">Navegar</div>
-        <ul class="footer-links-list">
-          <li><a href="#porque">Por qué HoneyB</a></li>
-          <li><a href="#historia">Historia</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#aromas">Aromas</a></li>
-        </ul>
-      </div>
+      <hr class="footer-divider">
 
-      <div class="col-6 col-lg-2 reveal" style="transition-delay:.2s;">
-        <div class="footer-col-title">Empresa</div>
-        <ul class="footer-links-list">
-          <li><a href="#proveedores">Proveedores</a></li>
-          <li><a href="#calidad">Calidad</a></li>
-          <li><a href="#hoteleria">Hotelería</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+        <div class="footer-copy">© 2024 Honey'B S.A.S. — Hecho con 🍯 en Colombia</div>
+        <div class="d-flex gap-2">
+          <a href="https://www.instagram.com/honeyb_natural_cosmetics/" class="social-icon-btn" target="_blank"
+            rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@honeyb_natural_cosmetics" class="social-icon-btn" target="_blank"
+            rel="noopener noreferrer" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
       </div>
-
-      <div class="col-6 col-lg-2 reveal" style="transition-delay:.3s;">
-        <div class="footer-col-title">Contacto</div>
-        <ul class="footer-links-list">
-          <li><a href="https://wa.me/573180775959" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-          <li><a href="mailto:honeybcorporativo@gmail.com">Correo</a></li>
-          <li><a href="https://www.instagram.com/honeyb_natural_cosmetics/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li><a href="https://www.tiktok.com/@honeyb_natural_cosmetics" target="_blank" rel="noopener noreferrer">TikTok</a></li>
-        </ul>
-      </div>
-
     </div>
-
-    <hr class="footer-divider">
-
-    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
-      <div class="footer-copy">© 2024 Honey'B S.A.S. — Hecho con 🍯 en Colombia</div>
-      <div class="d-flex gap-2">
-        <a href="https://www.instagram.com/honeyb_natural_cosmetics/" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.tiktok.com/@honeyb_natural_cosmetics" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-      </div>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 
-<!-- ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════
      SCRIPTS
 ═══════════════════════════════════════════ -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
 
 </body>
+
 </html>
